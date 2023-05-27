@@ -66,7 +66,7 @@ Enter your choice : -1
 ***** THANK YOU *****
 ```
 
-# InfixToPostfix
+# InfixToPostfix.cpp
 ```
 1. Create a stack.
 2. Print the operands as they arrive.
