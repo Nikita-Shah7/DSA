@@ -66,7 +66,7 @@ Enter your choice : -1
 ***** THANK YOU *****
 ```
 
-# InfixToPostfix.cpp
+# InfixToPostfix
 ```
 1. Create a stack.
 2. Print the operands as they arrive.
@@ -95,6 +95,24 @@ Enter your choice : -1
 
 # UnidirectedGraph.cpp
 ```
+ index ---> (index,weight)
+ 1 ---> (2,7) -> (3,8)
+ 2 ---> (1,7) -> (3,3) -> (4,6)
+ 3 ---> (1,8) -> (2,3) -> (4,4) -> (5,3)
+ 4 ---> (2,6) -> (3,4) -> (5,2) -> (6,5)
+ 5 ---> (3,3) -> (4,2) -> (6,2)
+ 6 ---> (4,5) -> (5,2)
+
+           6
+      2 --------- 4
+   7 /|         / |\ 5
+   / |3      /   | \
+   1  |   4 /     |  6
+    \ |   /     2 | / 2
+   8 \| /         |/
+      3 --------- 5
+           3
+
 Enter number of verties : 6
 Enter number of edges : 9
 
