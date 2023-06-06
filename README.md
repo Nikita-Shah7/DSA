@@ -24,44 +24,47 @@ Key : nik
 Value : 12
 Enter your choice : 2
 Enter the data to be inserted : 
-Key : mok  
-Value : 23
+Key : mok
+Value : 34
 Enter your choice : 2
 Enter the data to be inserted : 
-Key : rohan
-Value : 11
-Enter your choice : 2    
-Enter the data to be inserted :
-Key : mihir
+Key : alex
 Value : 44
-Enter your choice : 2   
+Enter your choice : 2
+Enter the data to be inserted : 
+Key : jonny
+Value : 78
+Enter your choice : 2
 Enter the data to be inserted :
-Key : keni
-Value : 89
-Enter your choice : 2    
-Enter the data to be inserted :
-Key : mokshi
-Value : 24
+Key : ritesh
+Value : 11
 Enter your choice : 0
 Index     Key-Value Pairs
-  0 --->  rohan->11 ; mihir->44 ;
-Enter the key : nik
-Data found.
-nik->12
-Enter your choice : 4
-Enter the key : nikki
-No relevant data found!
-Enter your choice : 3
-Enter the key : rohan
-Enter your choice : 0
-Index     Key-Value Pairs
-  0 --->  mihir->44 ;
-  1 --->  mokshi->24 ;
+  0 --->  jonny->78 ;
+  1 --->  ritesh->11 ;
   2 --->
   3 --->
   4 --->
-  5 --->  nik->12 ; mok->23 ;
-  6 --->  keni->89 ;
+  5 --->  nik->12 ; mok->34 ;
+  6 --->  alex->44 ;
+Enter your choice : 4
+Enter the key : jonny
+Data found.
+jonny->78
+Enter your choice : 4    
+Enter the key : nikk
+No relevant data found!
+Enter your choice : 3
+Enter the key : alex
+Enter your choice : 0
+Index     Key-Value Pairs
+  0 --->  jonny->78 ;
+  1 --->  ritesh->11 ;
+  2 --->
+  3 --->
+  4 --->
+  5 --->  nik->12 ; mok->34 ; 
+  6 --->
 Enter your choice : -1
 ***** THANK YOU *****
 ```
