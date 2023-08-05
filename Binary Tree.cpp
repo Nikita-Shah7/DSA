@@ -569,5 +569,3 @@ int main(void)
 
     return 0;
 }
-
-// Reference[0] :: https://github.com/Mihir-Paija/DSA
