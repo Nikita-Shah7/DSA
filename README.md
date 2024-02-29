@@ -109,7 +109,7 @@ Enter your choice : -1
            6
       2 --------- 4
    7 /|         / |\ 5
-   / |3      /   | \
+   /  |3      /   | \
    1  |   4 /     |  6
     \ |   /     2 | / 2
    8 \| /         |/
@@ -331,4 +331,51 @@ BoundaryTraversal ::1 2 4 10 11 6 7 3
 Size of Binary Tree : 11
 Height of Binary Tree : 4
 ----------------------------------------
+```
+
+
+# Trie.cpp
+```
+***** TRIE DATA STRUCTURE MENU DRIVEN *****
+0: Display Trie
+1: Insert a word in Trie.
+2: Delete a word in Trie.
+3: Search for a word in Trie.
+-1: Quit
+Enter your choice : 1
+Enter the word to be inserted : 
+abcd
+Enter your choice : 1
+Enter the word to be inserted : 
+efgh
+Enter your choice : 1 
+Enter the word to be inserted : 
+abcde
+Enter your choice : 1
+Enter the word to be inserted : 
+abc
+Enter your choice : 1
+Enter the word to be inserted : a
+Enter your choice : 0
+a
+abc
+abcd
+abcde
+efgh
+Enter your choice : 3
+Enter the word to be searched : abcd
+abcd -> Item Found!
+Enter your choice : 3  
+Enter the word to be searched : asd
+asd -> Not Found!
+Enter your choice : 2
+Enter the word to be deleted : a
+a -> Deletion Successful!
+Enter your choice : 0
+abc
+abcd
+abcde
+efgh
+Enter your choice : -1
+***** THANK YOU *****
 ```

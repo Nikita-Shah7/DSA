@@ -42,6 +42,7 @@ class BinaryTree
     void LevelOrder(Node *); // BFS
     int HeightOfNode(Node *);
     int Depth(Node *);
+    Node *longestCommonAncestor(Node *, Node *, Node *);
     Node *deepestNode();
 
 public:
@@ -301,6 +302,22 @@ Node *BinaryTree ::deepestNode() // get pointer to parent og the deepest node
     return parent;
 }
 
+Node *BinaryTree ::longestCommonAncestor(Node *ptr, Node *p, Node *q)
+{
+    if (!root || root == p || root == q)
+        return root;
+    Node *left = longestCommonAncestor(ptr->lchild, p, q);
+    Node *right = longestCommonAncestor(ptr->rchild, p, q);
+
+    if (!left && !right)
+        return NULL;
+    if (!left)
+        return right;
+    if (!right)
+        return left;
+    return ptr;
+}
+
 void BinaryTree ::Delete()
 {
     // replace the data of the node to be deleted by the data in the deepest node
@@ -490,7 +507,7 @@ bool BinaryTree ::levelOrder(Node *ptr, int lvl)
 void BinaryTree ::LevelOrder(Node *ptr)
 {
     int level = 1;
-    while (level <= HeightOfNode(ptr)+1)
+    while (level <= HeightOfNode(ptr) + 1)
     {
         cout << endl
              << level << " -> ";

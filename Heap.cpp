@@ -140,7 +140,7 @@ void maxHeap ::Heapify()
     i = 1;
     while (i <= parent(size))
     {
-        if (arr[left] > arr[rightChild(i)] && arr[leftChild(i)] > arr[i])
+        if (arr[leftChild(i)] > arr[rightChild(i)] && arr[leftChild(i)] > arr[i])
             swap(arr[i], arr[leftChild(i)]);
         else if (rightChild(i) <= size && arr[rightChild(i)] > arr[i] && arr[leftChild(i)] < arr[rightChild(i)])
             swap(arr[i], arr[rightChild(i)]);
@@ -177,7 +177,7 @@ void maxHeap ::Delete()
     return;
 }
 
-int maxHeap ::Display()
+void maxHeap ::Display()
 {
     if (isEmpty())
     {
